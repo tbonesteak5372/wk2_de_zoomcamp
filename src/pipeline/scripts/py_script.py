@@ -7,10 +7,9 @@ def ingest_data() -> DataFrame:
     df = pd.read_csv(prefix + 'yellow_tripdata_2021-01.csv.gz', nrows=100000)
     print(df.head())
     print(df.count())
-    return df 
+    return df
 
 
-ingest_data()
 
 
 

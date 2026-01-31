@@ -1,7 +1,7 @@
 variable "project_id" {
   type        = string
   description = "GCP project ID"
-  default = "project-bb885080-1abb-4cf9-9a9"
+  default     = "project-bb885080-1abb-4cf9-9a9"
 }
 
 variable "region" {
@@ -23,6 +23,6 @@ variable "location" {
 }
 
 variable "service_account" {
-  type        = string
-  description =  "terraform@project-bb885080-1abb-4cf9-9a9.iam.gserviceaccount.com"
+  type    = string
+  default = "terraform@project-bb885080-1abb-4cf9-9a9.iam.gserviceaccount.com"
 }
