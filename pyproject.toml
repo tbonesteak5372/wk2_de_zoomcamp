@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wk2-de-zoomcamp"
+version = "0.1.0"
+description = "Week 2 Data Engineering Zoomcamp"
+requires-python = ">=3.10"
+
+dependencies = [
+  "pandas",
+  "google-cloud-bigquery",
+  "google-cloud-storage"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

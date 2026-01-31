@@ -4,7 +4,7 @@ resource "google_storage_bucket" "gcp_bucket" {
   storage_class = "STANDARD"
   uniform_bucket_level_access = true 
 
-
+  
   lifecycle_rule {
     condition {
       age = 1
@@ -29,7 +29,6 @@ resource "google_compute_instance" "compute_instance" {
     initialize_params {
       image = "debian-cloud/debian-11"
       disk_size_gb = 50
-
     }
   }
   network_interface {
